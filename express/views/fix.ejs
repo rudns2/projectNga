@@ -1,0 +1,23 @@
+<div class="fix_title">
+  <h1>읽기 및 고치는 공간</h1>
+</div>
+<div class="fix_wrap">
+  <form action="/fixPlace" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id" value="">
+    <div>
+      <label for="name">상품이름</label>
+      <input type="text" name="name">
+    </div>
+    <div>
+      <label for="img">상품사진</label>
+      <input type="file" name="img"> 
+    </div>
+    <div>
+      <label for="create_time">수정시간</label>
+      <input type="text" name="create_time" >
+    </div>
+    <div>
+      <input type="submit" value="확인" >
+    </div>
+  </form>
+</div>

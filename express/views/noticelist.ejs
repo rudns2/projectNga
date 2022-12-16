@@ -1,0 +1,61 @@
+<body>
+    <div class="accordion_wrap">
+      <div class="accordion_noti">
+        <h1>
+          <a href="#">
+            공지사항
+          </a>
+        </h1>
+        <div class="btn_noti">
+          <img src="../img/icon_about_toggle_white.png">
+        </div>
+      </div>
+      <div class="hidden">
+        <div class="accordion">
+          <h1><a href="">
+              묻고 답하기
+            </a>
+          </h1>
+        </div>
+        <div class="accordion">
+          <h1><a href="Inquiry">
+              문의하기
+            </a></h1>
+        </div>
+      </div>
+    </div>
+    <table class="noti_table" border="1">
+      <% rows.forEach((row, index)=>{ %>
+      <tbody class="noti_tb">
+        <tr>
+          <td><%= row.id %></td>
+          <td class="noti_cont" onclick="javascript:location.href='/reading?id=<%= row.id %>'"><%= row.content %></td>
+          <td><%= row.name %></td>
+        </tr>
+      </tbody>
+      <%  }); %>
+    </table>
+</body>
+<script>
+  let panelQuestion = document.querySelectorAll('.hidden');
+  /* 모든 패널의 active를 제거하고 해당 panel에만 active 추가 */
+  let collapseBtn = document.querySelector('.btn_noti');
+
+  function closeAll() {
+    for (let j = 0; j < panelQuestion.length; j++) {
+      panelQuestion[j].classList.toggle('active');
+    }
+  }
+  collapseBtn.addEventListener('click', function () {
+    closeAll();
+  });
+
+  const showValue = (target) => {
+    const value = target.value;
+    const text = target.options[target.selectedIndex].text;
+
+    document.querySelector('#inq_result').value = value;
+  }
+</script>
+
+</html>

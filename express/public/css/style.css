@@ -1,0 +1,398 @@
+/* swiper start */
+/* html,
+body {
+  position: relative;
+  height: 100%;
+} */
+.swiper.mySwiper{
+  position: relative;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+
+}
+
+.swiper-slide {
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
+  /* width: 100%;
+  height: 100%; */
+}
+
+
+/* SWIPER */
+
+.mySwiper{
+  position: relative;
+}
+.swiper-pagination-horizontal{
+  position: relative;
+}
+
+.swiper-pagination-current{
+  position: absolute;
+  left: 20px ; bottom:100px;
+}
+.swiper-pagination-total{
+  position: absolute;
+  right: 20px; bottom: 100px;
+}
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal{
+  height: 10px;
+  bottom: 15px;
+}
+
+input{
+  margin: 5px;
+}
+.sub{
+  margin: 10px 100px;
+}
+.w160 {
+  padding: 0 5rem;
+}
+/* common */
+body {
+  background-color: #32435F;
+}
+
+a {
+  color: #000000;
+}
+h1 {
+  font-size: 48px!important;
+  font-weight: 700!important;
+  text-shadow: 1px 1px 3px #000;
+  margin-bottom: 50px;
+}
+/* common */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  z-index: 10000000000000000000000000000000000000000000000000;
+  transition: top 0.3s;
+}
+
+#wrap {
+  padding: 0.75rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #32435F;
+  background: rgba(0,0,0,0.15);
+}
+
+.logo {
+  width: 75px;
+}
+
+.main_menu {
+  flex: 1;
+}
+
+.main_menu ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mobile_menu {
+  display: none;
+}
+
+.side_menu {
+  flex: 0.3;
+}
+
+.side_menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.side_menu .jigu {
+  padding-left: 15px;
+  background-image: url(../img/icon_header_global_black.png);
+  background-size: 15px 15px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.current_page{
+  font-size: 4rem;
+  color: #fff;
+}
+
+.section_1 {
+  width: 100%;
+  height: 100vh;
+}
+
+.back_img {
+  width: 100%; height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+.back_img.one{
+  width: 100%; height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  background-image: url(../img/hmgoepprobg.jpg);
+}
+.back_img.two{
+  width: 100%; height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  background-image: url(../img/hotel-stternoon-tea.png);
+}
+.back_img.three{
+  width: 100%; height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  background-image: url(../img/3066-main-teaser-16x9-the-making-2.jpg);
+}
+.banner {
+  width: 100%;
+  line-height: 48px;
+  text-align: center;
+  background-color: #000000;
+}
+
+.banner span {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.lookbook {
+  padding-top: 100px;
+  margin-bottom: 200px;
+  color: #FFF;
+}
+
+.lookbook h4 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.lookbook h1 span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.casual_wrap {
+  display: flex;
+}
+
+.casual_wrap div {
+  width: 30%;
+  margin-right: 50px;
+}
+
+.casual_img img {
+  width: 100%;
+  height: auto;
+}
+
+.casual_img.two {
+  margin-top: 150px;
+}
+
+.casual_img span {
+  margin-top: 15px;
+  display: block;
+  color: #FFF;
+  text-shadow: 1px 1px 2px gray;
+  line-height: 25px;
+}
+
+.video {
+  padding-bottom: 1%;
+  padding-top: 1%;
+  background-color: #000000;
+}
+
+iframe {
+  width: 100%;
+  height: 880px;
+}
+
+.newArrivals {
+  margin: 200px 0;
+}
+
+.NA_tit {
+  color: #FFF;
+}
+
+.NA_tit h4 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.NA_tit h1 span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.NA_img_wrap {
+  display: flex;
+  justify-content: space-between;
+  color: #FFF;
+}
+
+.NA_img_wrap div {
+  width: calc(25% - 20px);
+}
+
+.NA_img_wrap img {
+  width: 100%;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  height: auto;
+}
+
+.NA_img_wrap h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.home_bg {
+  width: 100%; padding: 21rem 0 ;
+  background-image: url(../img/hotel-style-holiday-afternoon-tea.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 200px;
+}
+
+.home_txt {
+  color: #ffffff;
+  text-align: center;
+}
+
+.home_txt h1 {
+  margin-bottom: 10px;
+}
+
+.home_txt h4 {
+  font-size: 20px;
+  margin-bottom: 150px;
+}
+
+.home_txt span {
+  padding: 10px;
+  font-size: 32px;
+  font-weight: 700;
+  background-color: #32435F;
+  border-radius: 15px;
+}
+
+.home_txt span:hover {
+  text-decoration: underline;
+}
+
+.a_w_img {
+  padding: 7.5% 0;
+  margin-bottom: 200px;
+  background-image: url(../img/hmbanner.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+}
+
+#news {
+  margin-bottom: 200px;
+  padding: 100px 5rem;
+  background-color: rgba(166, 127, 120, 0.5);
+  color: #FFF;
+}
+
+.news_wrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.news_list {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+  margin: 50px;
+}
+
+.news_list h2 {
+  display: block;
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.sub1_table{
+  margin: 0 auto;
+}
+.sub1_table{
+  border: 1px solid;
+}
+.sub1_table td{
+  border: 4px ridge rgba(1, 1, 1, 0.6);
+  text-align: center;
+  line-height: 100px;
+  width: 250px; height: 100px;
+  background-color: #f5f5f5;
+  color : #1f1f1f;
+  font-size: 18px;
+  font-weight: bold;
+}
+.sub1_tit{
+  text-align: center;
+  margin-top: 200px;
+}
+
+@media (max-width:1024px) {
+  .main_menu{
+    display: none;
+  }
+  .side_menu{
+    display: none;
+  }
+  .mobile_menu{
+    display: block;
+  }
+  .mobile_menu ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .mobile_menu ul li {
+    padding: 0 10px;
+  }
+}
+.sub_table th{
+  padding: 20px;
+}
+.sub_table td{
+  padding: 10px;
+}
