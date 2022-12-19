@@ -1,0 +1,16 @@
+<h1>수정</h1>
+<form method="post" action="/updateH">
+  <input type="hidden" name="id" value="<%= row.id %>">
+  <div>
+    <input type="text" name="name" value=" <%= row.name %>">
+  </div>
+  <div>
+    <textarea name="content" rows="10" cols="100">
+      <%= row.content %>
+    </textarea>
+  </div>
+  <div>
+    <input type="date" name="time" value=" <%= row.create_time %>">
+  </div>
+  <input type="submit" value="확인">
+</form>

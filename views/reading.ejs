@@ -1,0 +1,23 @@
+<table class="read_table">
+  <thead>
+    <th><%= row.id %></th>
+    <th><%= row.create_time %></th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>이름</td>
+      <td><%= row.name %></td>
+    </tr>
+    <tr>
+      <td>글</td>
+      <td><%= row.content %></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td><input type="button" value="수정" onclick="javascript:location.href='/updateh?id=<%= row.id %>'"></td>
+      <td><input type="button" value="삭제" onclick="javascript:location.href='/deleteh?id=<%= row.id %>'"></td>
+      <td><a class="ghkrdls" href="noticelist"><input type="button" value="확인"></a></td>
+    </tr>
+  </tfoot>
+</table>

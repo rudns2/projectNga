@@ -1,0 +1,135 @@
+<div class="w140">
+  <!-- <div class="new_title">
+    <h1>N<span class="darkblue_lie">E</span>WD<span class="darkblue_lie">R</span>ESS</h1>
+  </div> -->
+  <section class="section_newDress">
+    <aside id="cate_side">
+      <div class="cate_sticky">
+        <div class="new_title">
+          <h1>N<span class="darkblue_lie">E</span>WD<span class="darkblue_lie">R</span>ESS</h1>
+        </div>
+        <div class="cate_wrap">
+          <div>
+            <h4>MEN</h4>
+          </div>
+          <div>
+            <h4>WOMEN</h4>
+          </div>
+          <div>
+            <h4>BABYS</h4>
+          </div>
+          <div>
+            <h4>KIDS</h4>
+          </div>
+          <div>
+            <h4>HMHOME</h4>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <article id="catalog">
+      <div class="figure_gnb">
+      <% rows.forEach((row, index)=>{ %>
+        <figure>
+          <div class="figure_img">
+            <img src="<%= row.img %>" alt="이미지사진" onclick="javascript:location.href='/fixRead?id=<%= row.id %>'">
+            <input type="button" value="수정" id="fix" >
+          </div>
+          <figcaption class="figure_txt"><%= row.name%>
+          </figcaption>
+        </figure>
+        <%  }); %>
+      </div>
+      <div class="figure_wrap">
+        <figure>
+          <div class="figure_img">
+            <img src="img/hmmannew1-1.jpg" alt="">
+            <input type="button" value="수정" id="fix" >
+          </div>
+          <figcaption class="figure_txt">발수 카 코트
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="figure_img">
+            <img src="img/hmmannew1-2.jpg" alt="">
+            <input type="button" value="수정" id="fix" >
+          </div>
+          <figcaption class="figure_txt">써모라이트® 플리스 재킷
+          </figcaption>
+        </figure>
+      </div>
+      <div class="figure_wrap">
+        <figure>
+          <div class="figure_img">
+            <img src="img/hmmannew1-3.jpg" alt="">
+            <input type="button" value="수정" id="fix" >
+          </div>
+          <figcaption class="figure_txt">폴로 바이커 재킷
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="figure_img">
+            <img src="img/hmmannew1-4.jpg" alt="">
+            <input type="button" value="수정" id="fix" >
+          </div>
+          <figcaption class="figure_txt">오버사이즈핏 보머 재킷
+          </figcaption>
+        </figure>
+      </div>
+      <div class="figure_wrap">
+        <figure>
+          <div class="figure_img">
+            <img src="img/hmmannew1-5.jpg" alt="">
+            <input type="button" value="수정" id="fix" >
+          </div>
+          <figcaption class="figure_txt">올 블렌드 재킷
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="figure_img">
+            <img src="img/hmmannew1-6.jpg" alt="">
+            <input type="button" value="수정" id="fix" >
+          </div>
+          <figcaption class="figure_txt">오버사이즈핏 자카드 니트 가디건
+          </figcaption>
+        </figure>
+      </div>
+      <div class="figure_wrap">
+        <figure>
+          <div class="figure_img">
+            <img src="img/hmmannew1-7.jpg" alt="">
+            <input type="button" value="수정" id="fix" >
+          </div>
+          <figcaption class="figure_txt">베이스볼 재킷
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="figure_img">
+            <img src="img/hmmannew1-8.jpg" alt="">
+            <input type="button" value="수정" id="fix" >            
+          </div>
+          <figcaption class="figure_txt">발수 코팅 트랙 팬츠
+          </figcaption>
+        </figure>
+      </div>
+      <div class="figure_wrap">
+        <figure>
+          <div class="figure_img">
+            <img src="img/hmmannew1-9.jpg" alt="">
+            <input type="button" value="수정" id="fix" >
+          </div>
+          <figcaption class="figure_txt">StormMove™ 3 레이어 스키 팬츠
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="figure_img">
+            <img src="img/hmmannew1-10.jpg" alt="">
+            <input type="button" value="수정" id="fix" >            
+          </div>
+          <figcaption class="figure_txt">오버사이즈 벨벳 재킷
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+  </section>
+</div>
