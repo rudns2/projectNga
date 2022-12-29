@@ -3,7 +3,7 @@ var connection =  mysql.createConnection({
   host: "database-1.cgnteyiqmvhu.ap-northeast-2.rds.amazonaws.com",
   user: "jeong",
   password: "openup20.,",
-  database:'heroku_4918cc839f598eb',
+  database:'memoJu',
   multipleStatements: true
 });
 
